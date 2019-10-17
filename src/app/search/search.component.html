@@ -1,0 +1,77 @@
+<div class='card'>
+  <div class='card-header'>
+      
+    {{pageTitle}}
+    <div class='row'>
+
+        <div>
+          <h2>Filter :</h2>
+        </div>
+  
+        <div class="input-group">
+          <div class="input-group-prepend">
+            
+            <select id="Filter" name="Filter" class="col-sm-6" [(ngModel)]='Filter' >
+              <option value="" selected disabled hidden>Filter by</option>
+              <option value="Seat ID">Seat ID</option>
+              <option value="Assert User ID">Assert User ID</option>
+              <option value="Assert Username">Assert Username</option>
+              <option value="Team">Team</option>
+              <option value="Seat Type">Seat Type</option>
+  
+            </select>
+            
+            <input class="form-control  col-sm-7" placeholder="Enter Search Text" type='text' [(ngModel)]='listFilter' />
+           
+          </div>
+        </div>
+  
+      </div>
+  </div>
+  <div class='card-body'>
+    </div>
+
+      <div class='table-responsive' >
+          <table class='table'>
+            <thead>
+              <tr>
+      
+                <th style="width:100px;">Seat ID</th>
+                <th style="width:200px;">Assert User ID</th>
+                <th style="width:200px;"> Assert Username</th>
+                <th style="width:200px;">Seat Type</th>
+                <th style="width:300px;">Team</th>
+                <th style="width:300px;"> </th>
+                <!-- <th>Start Date</th> -->
+                <!-- <th>End Date</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let product of filteredProducts'>
+      
+                <td>
+                  {{ product.seatID  }}
+                </td>
+                <td>{{ product.assertUserid }}</td>
+                <td>{{ product.assertUsername }}</td>
+                <td>{{ product.seatType  }}</td>
+                <td>{{ product.team  }}</td>
+                <!-- <td>{{ product.startDate  }}</td>
+                <td>{{ product.endDate  }}</td> -->
+                <td>
+                <input id="okButton" type="button" value="Edit" class="btn btn-light col-sm-4"  >  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      
+       
+
+  </div>
+   <!-- <div class='row' *ngIf='listFilter'>
+    <div class='col-md-6'>
+      <h4>Filtered by: {{listFilter}}</h4>
+    </div>
+  </div>  -->
+  
+</div>

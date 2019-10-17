@@ -1,0 +1,152 @@
+[{
+    "id": 0, 
+    "location": "SRZ-CHN",
+    "building": "SBD1",
+    "floor": "6th floor",   
+    "odcname": "ODC1", 
+    "confroom": ["Room1", "Room2"],
+    "managercubicalid": ["M001", "M002", "M003", "M004", "M005", "M006"],
+    "bayid": ["Bay1", "Bay2", "Bay3", "Bay4", "Bay5", "Bay6", "Bay7"],
+    "bayVal": [
+        { "bayid": ["A001","A002","A003","A004","A005","A006"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user6"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A012","A011","A010","A009","A008","A007"], 
+            "bayuser": ["user7","user8","user9","user10","user11","user12"],
+            "team": ["team1","team2","team3","team4","team5","team6"],
+            "baytype": 0
+        },
+        { "bayid": ["A013","A014","A015","A016","A018","A019"], 
+          "bayuser": ["user13","user14","user15","user16","user17","user18"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 1
+        },
+        { "bayid": ["A025","A024","A023","A022","A021","A020"], 
+            "bayuser": ["user1","user2","user3","user4","user5","user7"],
+            "team": ["team1","team2","team3","team4","team5","team6"],
+            "baytype": 0
+          },
+        { "bayid": ["A026","A027","A028","A029","A030","A031"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 1 
+        }, 
+        { "bayid": ["A032","A033","A034","A035","A036","A037"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 0
+        }, 
+        { "bayid": ["A038","A039","A040","A041","A042","A043"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A044","A045","A046","A047","A048","A049"], 
+          "bayuser": ["user1","user2","user3","user4","user5"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 0
+        },
+        { "bayid": ["A050","A051","A052","A053","A054","A055"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "team": ["team1","team2","team3","team4","team5","team6"],
+          "baytype": 1
+        }]
+    
+  },
+  {
+    "id": 1, 
+    "location": "SRZ-CHN",
+    "building": "SBD2",
+    "floor": "7th floor",   
+    "odcname": "ODC3", 
+    "confroom": ["Room1", "Room2"],
+    "managercubicalid": ["M001", "M002", "M003", "M004", "M005"],
+    "bayid": ["Bay1", "Bay2", "Bay3", "Bay4", "Bay5", "Bay6", "Bay7"],
+    "bayVal": [
+        { "bayid": ["A001","A002","A003","A004","A005","A006"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user6"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A012","A011","A010","A009","A008","A007"], 
+            "bayuser": ["user7","user8","user9","user10","user11","user12"],
+            "baytype": 0
+        },
+        { "bayid": ["A013","A014","A015","A016","A018","A019"], 
+          "bayuser": ["user13","user14","user15","user16","user17","user18"],
+          "baytype": 1
+        },
+        { "bayid": ["A025","A024","A023","A022","A021","A020"], 
+            "bayuser": ["user1","user2","user3","user4","user5","user7"],
+            "baytype": 0
+          },
+        { "bayid": ["A026","A027","A028","A029","A030","A031"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 1 
+        }, 
+        { "bayid": ["A032","A033","A034","A035","A036","A037"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 0
+        }, 
+        { "bayid": ["A038","A039","A040","A041","A042","A043"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A044","A045","A046","A047","A048","A049"], 
+          "bayuser": ["user1","user2","user3","user4","user5"],
+          "baytype": 0
+        },
+        { "bayid": ["A050","A051","A052"], 
+          "bayuser": ["user1","user2","user3"],
+          "baytype": 1
+        }]
+    
+  },
+  {
+    "id": 2, 
+    "location": "SRZ-CHN",
+    "building": "SBD3",
+    "floor": "8th floor",   
+    "odcname": "ODC5", 
+    "confroom": ["Room1", "Room2"],
+    "managercubicalid": ["M001", "M002", "M003", "M004", "M005", "M006", "M007"],
+    "bayid": ["Bay1", "Bay2", "Bay3", "Bay4", "Bay5", "Bay6", "Bay7"],
+    "bayVal": [
+        { "bayid": ["A001","A002","A003","A004","A005","A006"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user6"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A012","A011","A010","A009","A008","A007"], 
+            "bayuser": ["user7","user8","user9","user10","user11","user12"],
+            "baytype": 0
+        },
+        { "bayid": ["A013","A014","A015","A016","A018","A019"], 
+          "bayuser": ["user13","user14","user15","user16","user17","user18"],
+          "baytype": 1
+        },
+        { "bayid": ["A025","A024","A023","A022","A021","A020"], 
+            "bayuser": ["user1","user2","user3","user4","user5","user7"],
+            "baytype": 0
+          },
+        { "bayid": ["A026","A027","A028","A029","A030","A031"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 1 
+        }, 
+        { "bayid": ["A032","A033","A034","A035","A036","A037"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 0
+        }, 
+        { "bayid": ["A038","A039","A040","A041","A042","A043"], 
+          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "baytype": 1
+        }, 
+        { "bayid": ["A044","A045","A046","A047","A048","A049"], 
+          "bayuser": ["user1","user2","user3","user4","user5"],
+          "baytype": 0
+        }]
+    
+  }
+]
+
+   

@@ -1,0 +1,130 @@
+[{
+    "id": 0, 
+    "locations": "SRZ-CHN",  
+    "buildings": 
+    [
+        {"name":"SDB1", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                      {"id":1 , "odcname":"ODC3"},
+                      {"id":2 , "odcname":"ODC5"} ]
+             },
+             {"fname":"7st Floor", 
+                "odcs": [{"id":0 , "odcname":"ODC3"},
+                    {"id":1 , "odcname":"ODC4"},
+                    {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB2", "floors":[
+            {"fname":"7st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC4"},
+                {"id":1 , "odcname":"ODC5"},
+                {"id":2 , "odcname":"ODC6"}]
+             }]
+        },
+        {"name":"SDB3", "floors":[
+            {"fname":"8st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC2"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC6"}]
+             }]
+        }
+    ] 
+ 
+ },
+ {
+    "id": 1, 
+    "locations": "DLF-CHN",  
+    "buildings": 
+    [
+        {"name":"SDB1", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             },
+             {"fname":"7st Floor", 
+                "odcs": [{"id":0 , "odcname":"ODC1"},
+                    {"id":1 , "odcname":"ODC3"},
+                    {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB2", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }
+            ]
+        },
+        {"name":"SDB3", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             },
+             {"fname":"7st Floor", 
+                "odcs": [{"id":0 , "odcname":"ODC1"},
+                    {"id":1 , "odcname":"ODC3"}   ]
+             }]
+        }
+    ] 
+  },
+  {
+    "id": 2, 
+    "locations": "CRC-CHN",  
+    "buildings": 
+    [
+        {"name":"SDB1", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB2", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB3", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        }
+    ] 
+  },
+  {
+    "id": 3, "locations": "PUNE", 
+    "buildings": 
+    [
+        {"name":"SDB1", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB2", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        },
+        {"name":"SDB3", "floors":[
+            {"fname":"6st Floor", 
+             "odcs": [{"id":0 , "odcname":"ODC1"},
+                {"id":1 , "odcname":"ODC3"},
+                {"id":2 , "odcname":"ODC5"}]
+             }]
+        }
+    ] 
+  }
+]
+ 
+

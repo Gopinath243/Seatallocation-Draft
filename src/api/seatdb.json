@@ -1,0 +1,59 @@
+
+[
+  {
+    "seatID": "A001",
+    "assertUserid": "595950",
+    "assertUsername": "Gopinath Haridass",
+    "seatType": "Desktop",
+    "team": "OPN - Consumer Finance",
+    "startDate": "April 18, 2017",
+    "endDate": "April 19, 2020",
+    "odcId": "ODC3",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+  },
+{
+  "seatID": "A002",
+  "assertUserid": "495952",
+  "assertUsername": "Dinesh Kumar",
+  "seatType": "Desktop",
+  "team": "OPN - Private Credits",
+  "startDate": "May 18, 2017",
+  "endDate": "May 19, 2020",
+  "odcId": "ODC3",
+  "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+  },
+  {
+    "seatID": "A003",
+    "assertUserid": "395954",
+    "assertUsername": "Praveen Logesan",
+    "seatType": "Laptop",
+    "team": "OPN - Private Finance",
+    "startDate": "april 18, 2017",
+    "endDate": "april 19, 2020",
+    "odcId": "ODC3",
+    "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+    },
+    {
+      "seatID": "A004",
+      "assertUserid": "545956",
+      "assertUsername": "Tharani ",
+      "seatType": "Desktop",
+      "team": "OPN - Consumer Finance",
+      "startDate": "april 18, 2017",
+      "endDate": "april 19, 2020",
+      "odcId": "ODC3",
+      "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+      }
+      ,
+    {
+      "seatID": "A005",
+      "assertUserid": "235945",
+      "assertUsername": "Manoj Kumar",
+      "seatType": "Desktop",
+      "team": "OPN - Consumer Finance",
+      "startDate": "april 18, 2017",
+      "endDate": "april 19, 2020",
+      "odcId": "ODC3",
+      "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+      }
+    ]

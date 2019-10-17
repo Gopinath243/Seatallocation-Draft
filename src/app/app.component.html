@@ -1,0 +1,180 @@
+<!-- START TOPBAR -->
+<div id="mySidenav" class='page-topbar '>
+    <div class='logo-area'>
+
+    </div>
+    <!-- <div class='float-left'>
+        <ul class="info-menu left-links list-inline list-unstyled">
+            <li class="sidebar-toggle-wrap list-inline-item">
+                <a href="#" data-toggle="sidebar" class="sidebar_toggle">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class='float-right'>
+            <ul class="info-menu right-links list-inline list-unstyled">
+                <li class="profile list-inline-item">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                        <img src="../data/profile/profile.jpg" alt="user-image" class="rounded-circle img-inline">
+                        <span>Shane Taylor <i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu profile animated fadeIn">
+                        <li class="dropdown-item">
+                            <a href="#settings">
+                                <i class="fa fa-wrench"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#profile">
+                                <i class="fa fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#help">
+                                <i class="fa fa-info"></i>
+                                Help
+                            </a>
+                        </li>
+                        <li class="last dropdown-item">
+                            <a href="ui-login.html">
+                                <i class="fa fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+             
+            </ul>			
+        </div>	 -->
+</div>
+<!-- END TOPBAR -->
+
+<!-- START CONTAINER -->
+<div class="page-container row-fluid container-fluid">
+
+    <!-- SIDEBAR - START -->
+    <div class="page-sidebar fixedscroll">
+
+        <!-- MAIN MENU - START -->
+
+        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+            <!-- USER INFO - START -->
+            <div class="profile-info row">
+
+                <div class="profile-image col-4">
+                    <!-- <a href="ui-profile.html">
+                        <img alt="" src="../assets/Images/profile.jpg" class="img-fluid rounded-circle">
+                    </a> -->
+                    <img alt="" src="../assets/Images/profile.jpg" class="img-fluid rounded-circle">
+                </div>
+
+                <div class="profile-details col-8">
+
+                    <h3>
+                        <a href="ui-profile.html">User</a>
+
+                        <!-- Available statuses: online, idle, busy, away and offline -->
+                        <span class="profile-status online"></span>
+                    </h3>
+
+                    <p class="profile-title">Normal User</p>
+
+                </div>
+
+            </div>
+            <!-- USER INFO - END -->
+
+            <ul class='wraplist'>
+                <li class='menusection'>Main</li>
+
+                <li class="open" [class.active]="viewMode=='appSearch'">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+
+
+                <li class="open" [class.active]="viewMode=='appSearch'">
+                    <input type="button" value="Search" class="btn btn-primary col-sm-12"
+                        (click)="viewMode='appSearch'" />
+                </li>
+                <li [class.active]="viewMode=='appSeatSelection'">
+                    <input type="button" value="Seat Enquire" class="btn btn-primary col-sm-12"
+                        (click)="viewMode='appSeatSelection'" />
+                </li>
+            </ul>
+            <!-- MAIN MENU - END -->
+        </div>
+    </div>
+    <!--  SIDEBAR - END -->
+    <section id="main-content" class=" ">
+        <section class="wrapper main-wrapper row">
+
+            <div [ngSwitch]="viewMode">
+                <div *ngSwitchCase="'appSearch'">
+                    <app-search></app-search>
+                </div>
+                <div *ngSwitchCase="'appSeatSelection'">
+                    <app-seat-selection> </app-seat-selection>
+                </div>
+                <div *ngSwitchDefault>Home Page (In Progress)
+                    <!-- <app-seat-layout> </app-seat-layout> -->
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- START CONTENT -->
+    <!-- END CONTENT -->
+    <!-- END CONTAINER -->
+</div>
+
+
+
+<!-- old code  -->
+<!-- <div class="container-fixed"> -->
+<!-- <div>
+        <div class="span12" style="background-color:rgb(138, 138, 110);">
+            <div style="padding: 15px 15px 15px 15px; text-align: center">
+                <h3><b>Seat Allocation Management System</b></h3>
+            </div>
+        </div>
+    </div> -->
+
+<div>
+
+    <!-- <ul class="nav nav-pills">
+            <li [class.active]="viewMode=='appSearch'">
+                <input type="button" value="Search" class="btn btn-info col-sm-12" (click)="viewMode='appSearch'" />
+            </li>
+            <li [class.active]="viewMode=='appSeatSelection'">
+                <input type="button" value="Seat Enquire" class="btn btn-info col-sm-12" (click)="viewMode='appSeatSelection'" />
+            </li>
+        </ul> -->
+    <!-- <div [ngSwitch]="viewMode">
+            <div *ngSwitchCase="'appSearch'">
+                <app-search></app-search>
+            </div>
+            <div *ngSwitchCase="'appSeatSelection'">
+                <app-seat-selection> </app-seat-selection>
+            </div>
+            <div *ngSwitchDefault>Otherwise</div>
+        </div>
+
+    </div> -->
+</div>
+<!-- <app-seat-layout> </app-seat-layout> -->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
