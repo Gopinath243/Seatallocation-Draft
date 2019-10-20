@@ -10,13 +10,18 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatRadioModule} from '@angular/material'
 import {MatDividerModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
+//import { PieChartComponent } from './piechart/piechart';
+import { PiechartComponent } from './piechart/piechart.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SeatLayoutComponent,
     SeatSelectionComponent,
-    SearchComponent   
+    SearchComponent,
+    PiechartComponent   
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import {RouterModule} from '@angular/router';
     HttpClientModule,
     MatRadioModule,
     MatDividerModule,
-    RouterModule 
+    RouterModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+
+<script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+
+
+  <div style="display: block">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [colors]="pieChartColors"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>

@@ -97,7 +97,12 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
-
+                <li class="open" >
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="title">Seat Search</span>
+                    </a>
+                </li>
 
 
                 <li class="open" [class.active]="viewMode=='appSearch'">
@@ -123,8 +128,88 @@
                 <div *ngSwitchCase="'appSeatSelection'">
                     <app-seat-selection> </app-seat-selection>
                 </div>
-                <div *ngSwitchDefault>Home Page (In Progress)
+                <div *ngSwitchDefault  class="row"> 
                     <!-- <app-seat-layout> </app-seat-layout> -->
+                    <div  class="col-xl-6" >
+                        <section class="box ">
+                            <header class="panel_header">
+                                <h2 class="title float-left">Platforms Used</h2>
+                                <div class="actions panel_actions float-right">
+                                    <a class="box_toggle fa fa-chevron-down"></a>
+                                    <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                    <a class="box_close fa fa-times"></a>
+                                </div>
+                            </header>
+                            <div class="content-body">        <div class="row">
+                                    <div class="col-12">
+                                        <div class="chart-container">
+                                            <div class="" id="platform_type_dates">
+                                            <app-piechart></app-piechart>
+                                        </div>
+                                        </div>
+                                    </div>      
+                                </div> <!-- End .row -->
+                            </div>
+                        </section>   
+                     </div>
+                    <div class="col-xl-6" >
+                        <section class="box ">
+                            <header class="panel_header">
+                                <h2 class="title float-left">Platforms Used</h2>
+                                <!-- <div class="actions panel_actions float-right">
+                                    <a class="box_toggle fa fa-chevron-down"></a>
+                                    <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                    <a class="box_close fa fa-times"></a>
+                                </div> -->
+                            </header>
+                            <div class="content-body">        <div class="row">
+                                    <div class="col-12">
+                                              <app-piechart></app-piechart>
+                                        
+                                    </div>      
+                                </div> <!-- End .row -->
+                            </div>
+                        </section>   
+                     </div>
+                     <div class="col-xl-6" >
+                        <section class="box ">
+                            <header class="panel_header">
+                                <h2 class="title float-left">Platforms Used</h2>
+                                <!-- <div class="actions panel_actions float-right">
+                                    <a class="box_toggle fa fa-chevron-down"></a>
+                                    <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                    <a class="box_close fa fa-times"></a>
+                                </div> -->
+                            </header>
+                            <div class="content-body">        <div class="row">
+                                    <div class="col-12">
+                                              <app-piechart></app-piechart>
+                                        
+                                    </div>      
+                                </div> <!-- End .row -->
+                            </div>
+                        </section>   
+                     </div>
+                     <div class="col-xl-6" >
+                        <section class="box ">
+                            <header class="panel_header">
+                                <h2 class="title float-left">Platforms Used</h2>
+                                <!-- <div class="actions panel_actions float-right">
+                                    <a class="box_toggle fa fa-chevron-down"></a>
+                                    <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                    <a class="box_close fa fa-times"></a>
+                                </div> -->
+                            </header>
+                            <div class="content-body">        <div class="row">
+                                    <div class="col-12">
+                                              <app-piechart></app-piechart>
+                                        
+                                    </div>      
+                                </div> <!-- End .row -->
+                            </div>
+                        </section>   
+                     </div>
+                    <!-- <app-piechart></app-piechart> -->
                 </div>
             </div>
         </section>
