@@ -9,27 +9,27 @@
     "bayid": ["Bay1", "Bay2", "Bay3", "Bay4", "Bay5", "Bay6", "Bay7"],
     "bayVal": [
         { "bayid": ["A001","A002","A003","A004","A005","A006"], 
-          "bayuser": ["user1","user2","user3","user4","user5","user6"],
+          "bayuser": ["user1","user2","user3","Empty","user5","user6"],
           "team": ["team1","team2","team3","team4","team5","team6"],
           "baytype": 1
         }, 
         { "bayid": ["A012","A011","A010","A009","A008","A007"], 
-            "bayuser": ["user7","user8","user9","user10","user11","user12"],
+            "bayuser": ["Empty","user8","user9","user10","user11","user12"],
             "team": ["team1","team2","team3","team4","team5","team6"],
             "baytype": 0
         },
         { "bayid": ["A013","A014","A015","A016","A018","A019"], 
-          "bayuser": ["user13","user14","user15","user16","user17","user18"],
+          "bayuser": ["user13","user14","user15","user16","Empty","user18"],
           "team": ["team1","team2","team3","team4","team5","team6"],
           "baytype": 1
         },
         { "bayid": ["A025","A024","A023","A022","A021","A020"], 
-            "bayuser": ["user1","user2","user3","user4","user5","user7"],
+            "bayuser": ["user1","Empty","user3","user4","user5","user7"],
             "team": ["team1","team2","team3","team4","team5","team6"],
             "baytype": 0
           },
         { "bayid": ["A026","A027","A028","A029","A030","A031"], 
-          "bayuser": ["user1","user2","user3","user4","user5","user7"],
+          "bayuser": ["user1","user2","user3","user4","Empty","user7"],
           "team": ["team1","team2","team3","team4","team5","team6"],
           "baytype": 1 
         }, 

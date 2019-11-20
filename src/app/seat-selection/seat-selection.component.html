@@ -12,7 +12,7 @@
           <select name="city" class=" col-sm-6 " [(ngModel)]="location"
             (change)="onChangelocation($event.target.value)">
             <option *ngFor="let location of locations" [value]="location">{{location}}</option>
-            
+
           </select>
         </div>
       </div>
@@ -24,9 +24,9 @@
           <select id="sel1" name="sdb" [(ngModel)]="sdb" class="col-sm-6 "
             (change)="onChangebuilding($event.target.value)">
             <option *ngFor="let building of buildings" [value]="building.name">{{building.name}}</option>
-        
-        </select>
-      </div>
+
+          </select>
+        </div>
       </div>
     </div>
     <!-- <mat-divider></mat-divider> -->
@@ -37,56 +37,64 @@
         </div>
         <div class="col-sm-6">
           <select id="sel1" name="floor" [(ngModel)]="floor" *ngIf="sdb" class="col-sm-6"
-          (change)="onChangefloor($event.target.value)">
+            (change)="onChangefloor($event.target.value)">
             <option *ngFor="let floor of floors" [value]="floor.fname">{{floor.fname}}</option>
           </select>
         </div>
       </div>
 
       <div class="col-sm-6" *ngIf="floor">
-          <div class="col-sm-6">
-            <h5><label class="labelcol"> Select ODC : </label> </h5>
-          </div>
-          <div class="col-sm-6">
-            <select id="sel1" name="odc"  [(ngModel)]="odc"  class="col-sm-6"
-            (change)="onChangeodc($event.target.value)">
-              <option *ngFor="let odc of odcs" [value]="odc.id">{{odc.odcname}}</option>
-            </select>
-          </div>
+        <div class="col-sm-6">
+          <h5><label class="labelcol"> Select ODC : </label> </h5>
         </div>
+        <div class="col-sm-6">
+          <select id="sel1" name="odc" [(ngModel)]="odc" class="col-sm-6" (change)="onChangeodc($event.target.value)">
+            <option *ngFor="let odc of odcs" [value]="odc.id">{{odc.odcname}}</option>
+          </select>
+        </div>
+      </div>
     </div>
     <div>
 
     </div>
-
-   
-    <div *ngIf="odc">
     
-      <!-- <input type="button" value="Reload" class="btn btn-primary col-sm-1"
-      (click)="viewMode='clicked'" />
+    <div *ngIf="odc">
+        <div class="col-sm-6 divheader" >
+            <h5><label class="labelcol">  </label> </h5>
+          </div>
+      <div *ngIf="layoutid == 0">
+        <app-seat-layout [layoutid]='layoutid'> </app-seat-layout>
+
+      </div>
+      <div *ngIf="layoutid == 1">
+        <app-seat-layout [layoutid]='layoutid'> </app-seat-layout>
+
+      </div>
+      <div *ngIf="layoutid == 2">
+        <app-seat-layout [layoutid]='layoutid'> </app-seat-layout>
+
+      </div>
+      <div *ngIf="layoutid == 3">
+        <app-seat-layout [layoutid]='layoutid'> </app-seat-layout>
+
+      </div>
+    </div>
 
 
-      <div [ngSwitch]="viewMode">
-        <div *ngSwitchCase="'clicked'">
-          <app-seat-selection> </app-seat-selection>
-        </div>
-        
-    </div> -->
-      <!-- <div class="col-sm-6 divheader" >
+
+    <!-- <div class="col-sm-6 divheader" >
         <h5><label class="labelcol"> Total No of Seat : </label> </h5>
         <h5><label class="labelcol"> No of Seat Used  : </label> </h5>
         <h5><label class="labelcol"> No of Seat Free  : </label> </h5>
         
       </div>      -->
-         <app-seat-layout [layoutid]='layoutid'> </app-seat-layout> 
+    <!-- <app-seat-layout [layoutid]='layoutid'> </app-seat-layout>  -->
 
-         <!-- <a routerLink = "seat-layout">New component</a>
-
+    <!-- <a routerLink = "seat-layout">New component</a>
+ <a [routerLink]="['/app-seat-selection']">
          <router-outlet></router-outlet> -->
 
-    </div>
-     
-  </div>   
-  
+
+  </div>
+
 </div>
- 

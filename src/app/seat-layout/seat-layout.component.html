@@ -1,5 +1,10 @@
 <div class='card-header'>
-
+  <!-- <div class="col-sm-6 divheader" >
+        <h5><label class="labelcol"> Total No of Seat : {{managercubicalcount.length + baycount.length}} </label> </h5>
+        <h5><label class="labelcol"> No of Seat Used  : </label> </h5>
+        <h5><label class="labelcol"> No of Seat Free  : </label> </h5>
+        
+      </div>       -->
   <div class="container-fluid layoutstyle">
     <div class="row">
       <!-- <div class="col-md-2">
@@ -17,13 +22,13 @@
           </tr>
         </table>
       </div>
-      <div class="col-md-8"  *ngIf='managercubicalcount'>
+      <div class="col-md-8" *ngIf='managercubicalcount'>
         <table>
           <tr>
 
             <td *ngFor='let managercubical of managercubicalcount'>
               <div style="width:110px;height:80px;background-color: rgb(238, 221, 221);">
-                   
+
                 {{managercubical}}
               </div>
             </td>
@@ -64,8 +69,12 @@
       <div class="col-md-2">
       </div>
       <div class="col-md-1">
-        <img alt="" src="../assets/Images/Arrowleft.png" height="35" width="45"> 
+        <img alt="" src="../assets/Images/Arrowleft.png" height="35" width="45">
       </div>
+      <div class="col-md-1">
+
+      </div>
+      <h5><label class="labelcol"> Entry </label> </h5>
     </div>
 
 
@@ -80,20 +89,33 @@
               <tr>
                 <div *ngIf='bay.baytype'>
                   <td>
-                    <div style="width:60px;height:60px; background-color: rgb(208, 220, 255);">{{cubical }} {{bay.bayuser[i]}}</div>
+
+                    <div *ngIf='bay.bayuser[i] == "Empty"'
+                      style="width:60px;height:60px; background-color: rgb(138, 238, 147);">{{cubical }}
+                      {{bay.bayuser[i]}}
+                    </div>
+                    <div *ngIf='bay.bayuser[i] != "Empty"'
+                      style="width:60px;height:60px; background-color: rgb(220, 158, 245);">{{cubical }}
+                      {{bay.bayuser[i]}}</div>
+
                   </td>
                 </div>
                 <div *ngIf='!bay.baytype'>
                   <td>
-                    <div style="width:60px;height:60px;background-color:  rgb(208, 220, 255);">{{cubical}} {{bay.bayuser[i]}}</div>
+                    <div *ngIf='bay.bayuser[i] == "Empty"'
+                      style="width:60px;height:60px; background-color: rgb(138, 238, 147);">{{cubical }}
+                      {{bay.bayuser[i]}}</div>
+                    <div *ngIf='bay.bayuser[i] != "Empty"'
+                      style="width:60px;height:60px; background-color: rgb(220, 158, 245);">{{cubical }}
+                      {{bay.bayuser[i]}}</div>
                   </td>
                 </div>
               </tr>
             </div>
           </table>
         </div>
-        <div  style="width:60px;height:60px;" *ngIf='bay.baytype'>
-          <img alt="" src="../assets/Images/Arrowdown.png" height="35" width="45"> 
+        <div style="width:60px;height:60px;" *ngIf='bay.baytype'>
+          <img alt="" src="../assets/Images/Arrowdown.png" height="35" width="45">
         </div>
       </div>
 

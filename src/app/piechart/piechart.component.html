@@ -1,13 +1,119 @@
-
 <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
 
 
-  <div style="display: block">
-    <canvas baseChart
-            [data]="pieChartData"
-            [labels]="pieChartLabels"
-            [chartType]="pieChartType"
-            [colors]="pieChartColors"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+<div class="row">
+     
+  <div class="col-xl-5">
+    <section class="box ">
+      <header class="panel_header">
+        <h2 class="title float-left">Chennai</h2>
+        <!-- <div class="actions panel_actions float-right">
+          <a class="box_toggle fa fa-chevron-down"></a>
+          <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+          <a class="box_close fa fa-times"></a>
+        </div> -->
+      </header>
+      <div class="content-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="chart-container">
+              <div class="" id="platform_type_dates">
+                <div style="display: block">
+                  <canvas baseChart [data]="pieChartDataChennai" [labels]="pieChartLabels" [chartType]="pieChartType"
+                    [colors]="pieChartColors" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- End .row -->
+      </div>
+    </section>
   </div>
+  
+  <div class="col-xl-5">
+    <section class="box ">
+      <header class="panel_header">
+        <h2 class="title float-left">Pune</h2>
+        <!-- <div class="actions panel_actions float-right">
+          <a class="box_toggle fa fa-chevron-down"></a>
+          <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+          <a class="box_close fa fa-times"></a>
+        </div> -->
+      </header>
+      <div class="content-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="chart-container">
+              <div class="" id="platform_type_dates">
+                <div style="display: block">
+                  <canvas baseChart [data]="pieChartDataPune" [labels]="pieChartLabels" [chartType]="pieChartType"
+                    [colors]="pieChartColors" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> <!-- End .row -->
+      </div>
+    </section>
+  </div>
+  <div class="col-xl-5">
+      <section class="box ">
+        <header class="panel_header">
+          <h2 class="title float-left">Banglore</h2>
+          <!-- <div class="actions panel_actions float-right">
+            <a class="box_toggle fa fa-chevron-down"></a>
+            <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+            <a class="box_close fa fa-times"></a>
+          </div> -->
+        </header>
+        <div class="content-body">
+          <div class="row">
+            <div class="col-12">
+              <div class="chart-container">
+                <div class="" id="platform_type_dates">
+                  <div style="display: block">
+                    <canvas baseChart [data]="pieChartDataBanglore" [labels]="pieChartLabels" [chartType]="pieChartType"
+                      [colors]="pieChartColors" (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)"></canvas>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div> <!-- End .row -->
+        </div>
+      </section>
+    </div>
+    <div class="col-xl-5">
+        <section class="box ">
+          <header class="panel_header">
+            <h2 class="title float-left">Hydrabad</h2>
+            <!-- <div class="actions panel_actions float-right">
+              <a class="box_toggle fa fa-chevron-down"></a>
+              <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+              <a class="box_close fa fa-times"></a>
+            </div> -->
+          </header>
+          <div class="content-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="chart-container">
+                  <div class="" id="platform_type_dates">
+                    <div style="display: block">
+                      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+                        [colors]="pieChartColors" (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End .row -->
+          </div>
+        </section>
+      </div>
+</div>

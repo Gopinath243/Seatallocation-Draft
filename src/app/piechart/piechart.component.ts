@@ -8,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class PiechartComponent implements OnInit {
 
   // Pie
+
   public pieChartLabels:string[] = ['Available', 'Allocated', 'Other'];
-  public pieChartData:number[] = [20, 60, 20 ];
+  public pieChartData:number[] = [25, 60, 15 ];
+  public pieChartDataChennai:number[] = [10, 80, 10 ];
+  public pieChartDataPune:number[] = [30, 60, 10 ];
+  public pieChartDataBanglore:number[] = [20, 65, 15 ];
+  
   public pieChartType:string = 'pie';
   public pieChartColors =  [
     {
+      
       backgroundColor: [
-      'rgba(30, 169, 224, 0.8)',
-      'rgba(255,165,0,0.9)',
-      'rgba(139, 136, 136, 0.9)']
+      '#00ff99',
+      '#99ddff',
+      '#ffcc80']
     }]
   // public pieChartColors =  [
   //   { // grey

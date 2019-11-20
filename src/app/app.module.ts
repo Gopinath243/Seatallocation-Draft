@@ -29,7 +29,12 @@ import { PiechartComponent } from './piechart/piechart.component';
     HttpClientModule,
     MatRadioModule,
     MatDividerModule,
-    RouterModule,
+    RouterModule.forRoot([
+      {path: 'app-search',component:SearchComponent},
+      {path: 'app-seat-selection',component:SeatSelectionComponent},
+      {path: 'app-piechart',component:PiechartComponent},
+      {path: 'app-seat-layout/:layoutid',component:SeatLayoutComponent}
+    ]),
     ChartsModule
   ],
   providers: [],

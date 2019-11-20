@@ -22,33 +22,7 @@ export class SeatSelectionComponent implements OnInit {
   public layoutid: number;
   errorMessage = '';
 
-//   selectedCountry: any;
-//    cities = {};
-//    dists= {};
-
-// public id;
-
-  // facility = [{
-  //   id: 1, locations: 'SRZ', buildings: ['SDB1', 'SDB2'], 
-  //   floors: ['6st Floor', '7st Floor', '8st Floor'],
-  //   odcs: ['ODC1', 'ODC3', 'ODC5']
-  // },
-  // {
-  //   id: 2, locations: 'DLF', cities: ['SDB10', 'SDB11'],
-  //   floors: ['6st Floor', '7st Floor', '8st Floor'],
-  //   odcs: ['ODC1', 'ODC3', 'ODC5']
-  // },
-  // {
-  //   id: 3, locations: 'MRPZ', cities: ['SDB1', 'SDB2','SDB3'],
-  //   floors: ['6st Floor', '7st Floor', '8st Floor'],
-  //   odcs: ['ODC1', 'ODC3', 'ODC5']
-  // },
-  // {
-  //   id: 4, locations: 'CRC', cities: ['SDB2', 'SDB3','SDB4'],
-  //   floors: ['6st Floor', '7st Floor', '8st Floor'],
-  //   odcs: ['ODC1', 'ODC3', 'ODC5']
-  // },
-  // ];
+ 
 
  
 

@@ -32,19 +32,13 @@ export class SearchComponent implements OnInit {
   products: Iseat[] = [];
  
   constructor(private seatservice: SeatService) { 
-   // this.filteredProducts = this.products;
-   // this.listFilter = 'cart'
+ 
   }
 
   performFilter(filterBy: string): Iseat[] {
     filterBy = filterBy.toLocaleLowerCase();
 
-   // var filter = document.getElementById('Filterby').value;
-  //var filter = (<HTMLInputElement>document.getElementById('Filter')).value;
-  //const inputElement: HTMLInputElement = document.getElementById('Filter') as HTMLInputElement
-  //const inputValue: string = inputElement.value
-  //var inputValue = Filter;
-  //this.Filtervalue = "Assert Username";
+   
   console.log(this.Filtervalue);
    	switch (this.Filtervalue) {
   	case 'Seat ID':
